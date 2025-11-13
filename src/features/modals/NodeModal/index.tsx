@@ -1,4 +1,3 @@
-// COMMIT MARKER: inline editing feature added (non-functional marker for commit)
 import React from "react";
 import type { ModalProps } from "@mantine/core";
 import {
