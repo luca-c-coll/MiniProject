@@ -119,7 +119,7 @@ export const NodeModal = ({ opened, onClose }: ModalProps) => {
             <Text fz="xs" fw={500}>
               Content
             </Text>
-            <Group spacing="xs">
+            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
               {!editing && (
                 <Button size="xs" variant="default" onClick={handleEdit}>
                   Edit
@@ -136,7 +136,7 @@ export const NodeModal = ({ opened, onClose }: ModalProps) => {
                 </>
               )}
               <CloseButton onClick={onClose} />
-            </Group>
+            </div>
           </Flex>
           <ScrollArea.Autosize mah={250} maw={600}>
             {editing ? (
